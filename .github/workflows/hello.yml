@@ -5,12 +5,13 @@ on:
 
 #jobs
 jobs:
+  say-hello:
     runs-on: ubuntu-latest
-
-#steps
-  say_helo:
-    name: This will show the content of display of hello file
-    runs: echo "Hello prajwal this is your first project so from here i will grow to my heights"
+    steps:
+     - name: hello there program
+       run: echo "Hello there i am say hello from this pipeline "
+   
+      
     
 
 #actions
