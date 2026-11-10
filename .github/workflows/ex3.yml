@@ -6,4 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: three commands are run using pipe
-        run: | whoami pwd ls-la
+        run: | 
+              whoami 
+              pwd 
+              ls-la
