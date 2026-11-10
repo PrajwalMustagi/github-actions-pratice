@@ -1,0 +1,9 @@
+name: exercise3
+on:
+  workflow_dispatch:
+jobs:
+  three_commands-running:
+    runs-on: ubuntu-latest
+    steps:
+      - name: three commands are run using pipe
+        run: |whoami,pwd,ls-la
