@@ -1,0 +1,14 @@
+name: exercise4
+on:
+  push:
+  workflow_dispatch: 
+
+jobs:
+  two-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the repo
+        uses: actions/checkout@v4
+      - name: list the files in repo
+        run: ls -la
+        
