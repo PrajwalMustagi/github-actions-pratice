@@ -1,0 +1,15 @@
+name: exercise5
+on:
+  workflow_dispatch: 
+
+jobs:
+  variable-setting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set variable
+        run: |
+             MY_NAME="PRAJWAL"
+             MY_GOAL="DEVOPS ENGINEER"
+             echo "MY NAME IS $MY_NAME"
+             echo "MY GOAL IS TO BECOME $MY_GOAL"
+        
