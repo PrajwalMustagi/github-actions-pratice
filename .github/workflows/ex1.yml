@@ -1,0 +1,11 @@
+name: exercise1
+on:
+  workflow_dispatch:
+    
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+     - name: print greeting
+       run: echo "Good evening prajwal"
+      
