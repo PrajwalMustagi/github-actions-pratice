@@ -9,4 +9,4 @@ jobs:
         run: | 
               whoami 
               pwd 
-              ls-la
+              ls -la
