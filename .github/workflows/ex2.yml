@@ -1,0 +1,17 @@
+name: exercise2
+on:
+  workflow_dispatch:
+
+jobs:
+  starting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print starting
+        run: echo "starting"
+      - name: printing the date
+        run: echo "$date"
+      - name: printing finished
+        run: echo "All three steps finsihed"
+        
+
+        
