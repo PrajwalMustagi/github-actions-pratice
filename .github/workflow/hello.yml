@@ -1,0 +1,21 @@
+#Workflow
+#It should have name
+name: hello
+
+#jobs
+#It should be inside the Workflow
+#Make sure jobs starts with small letter
+jobs:
+  say_hello:
+    runs_on: ubuntu:latest
+  
+
+#steps
+#it should be inside the jobs
+    steps:
+    -name: The will display the hello world word
+     run: echo "Hello mr Prajwal this is your 1st github-actions project so from here i will and will be able to grow to highest heights in devops"
+    
+
+#Actions
+#it should be inside the Steps
