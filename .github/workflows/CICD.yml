@@ -1,0 +1,30 @@
+name: CICD-pipeline
+on:
+  workflow_dispatch:
+
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone-the-git-repository
+      - run: echo "Git clonning is done"
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: building-the images
+      - run: echo "Run the build command to create the image"
+  
+  test:
+    runs-on: ubuntu:latest
+    steps:
+      - name: Test the commands
+      - run: echo "Run the test phase"
+  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the command
+      - run: echo "Run the deploy phase"
+  
+  
