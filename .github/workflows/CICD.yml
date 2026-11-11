@@ -16,14 +16,14 @@ jobs:
         run: echo "Run the build command to create the image"
   
   test:
-    needs: build
+    needs: [build]
     runs-on: ubuntu:latest
     steps:
       - name: Test the commands
         run: echo "Run the test phase"
   
   deploy:
-    needs: test
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the command
