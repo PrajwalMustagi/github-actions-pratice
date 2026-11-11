@@ -23,7 +23,7 @@ jobs:
         run: echo "Run the test phase"
   
   deploy:
-    needs: [test]
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy the command
